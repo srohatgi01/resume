@@ -1,0 +1,367 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Sarthak Rohatgi} \\ \vspace{1pt}
+    Bhopal, Madhya Pradesh \\ \vspace{1pt}
+    \small \href{tel:+919685992377}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-9685992377} ~} \href{mailto:srohatgi01@outlook.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{srohatgi01@outlook.com}} ~ 
+    \href{https://linkedin.com/in/sarthak-rohatgi}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{sarthak-rohatgi}}  ~
+    \href{https://github.com/srohatgi01}{\raisebox{-0.2\height}\faGithub\ \underline{srohatgi01}} ~
+    \href{https://www.hackerrank.com/s_rohatgi}{\raisebox{-0.2\height}\faHackerrank\ \underline{s\_rohatgi}} ~
+    % \href{https://codeforces.com/profile/yourid}{\raisebox{-0.2\height}\faPoll\ \underline{yourid}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oriental Institute of Science \& Technology}{2020 -- Present}
+      {B.Tech in CSE w/ specialization in Data Science - \textbf{CGPA} - \textbf{9.9/10}}{Bhopal, MP}
+  \resumeSubHeadingListEnd
+  
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {College Name}{MM YYYY -- MM YYYY}
+%       {Exam Name - Course Name  - \textbf{Percentage} - \textbf{xx\%}}{city, country}
+%   \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+% \section{COURSEWORK / SKILLS}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-2pt, parsep=5pt]
+%                 \item Data Structures \& Algorithms
+%                 \item Operating Systems
+%                 \item Network Security
+%                 \item Database Management System (DBMS)
+%                 \item Artificial Intelligence
+%                 \item OOPS Concept
+%                 \item Web Development
+%                 \item Android Development
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {\href{https://www.microsoft.com}{Microsoft \faExternalLink}}{May 2022} 
+      {\underline{Apprentice (Microsoft Engage 2022)}}{}
+      \resumeItemListStart
+        \resumeItem{\normalsize{1-month apprenticeship under Mr. Praneeth Nimmagadda at Microsoft through Microsoft Engage'22.}}
+    %   Uncomment the below line when you create the repository of all the live sites you have on the internet.
+        % \resumeItem{\normalsize \underline{{\textcolor{accent}{Live sites list}}}}
+        % \resumeItem{\textcolor{accent}{{\href{https://drive.google.com/file/d/16pwXaYNa6SnEK7UIX8-jFiQwMeK6c2R1/view?usp=sharing} 
+        %         {\underline{\normalsize {Certificate{}}}}}} \href{https://drive.google.com/file/d/16pwXaYNa6SnEK7UIX8-jFiQwMeK6c2R1/view?usp=sharing}{\faExternalLink}}
+  
+      \resumeItemListEnd
+     \resumeSubheading
+      {\href{http://khatepay.com}{KhatePay \faExternalLink}}{Feb 2022 -- Present}
+      {\underline{Flutter Developer Intern}}{}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Responsible for preparing app for launch, state management and consuming REST API.}}
+        \resumeItem{\normalsize{In less than a month, reduced the backlog by 22\%.}}
+    %   Uncomment the below line when you create the repository of all the live sites you have on the internet.
+        % \resumeItem{\normalsize \underline{{\textcolor{accent}{Live sites list}}}}
+  
+      \resumeItemListEnd
+    \resumeSubheading
+      {Freelancer}{July 2020 -- Jan 2021} 
+      {\underline{Full Stack Web Developer}}{}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Created static \& dynamic web apps for local businesses and deployed them on the cloud while carefully optimizing load time without compromising on visuals.}}
+    %   Uncomment the below line when you create the repository of all the live sites you have on the internet.
+        % \resumeItem{\normalsize \underline{{\textcolor{accent}{Live sites list}}}}
+  
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+     % Realtime SLD
+       \resumeProjectHeading
+          {\href{https://github.com/srohatgi01/realtime-sld}{\textbf{\large{\underline{Realtime Sign Language Detection Video App}}}{ }\faGithub{} \href{https://github.com/srohatgi01/realtime-sld}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{WebRTC, Tensorflow, React}}}{May 2022}
+          \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{Apprenticeship project for Microsoft Engage 2022}.}}
+            \resumeItem{\normalsize{1-1 Peer-to-Peer video calling app which can detect sign language in Realtime using Tensorflow.}}
+            \resumeItem{\normalsize{React for front-end, WebRTC and Firebase as signaling Server for video calling.}}
+            \resumeItem{\normalsize{Self-trained model using object detection model \& single shot detector with custom data set.}}
+            %  \resumeItem{
+            %     \textcolor{accent}
+            %     {\href{https://carasalons.in} 
+            %     {\underline{\normalsize {Live Site}}}}
+            % }
+            % \resumeItem{
+            %     \textcolor{accent} 
+            %     {\href{https://play.google.com/store/apps/details?id=com.sarthak.cara} 
+            %     {\underline{\normalsize {Play Store Link }}}}
+            %     \textcolor{accent} 
+            %     {\href{https://carasalons.in} 
+            %     {\underline{\normalsize {Live Site}}}}
+            % }
+          \resumeItemListEnd 
+          \vspace{-13pt}
+     % LEAD-A-THON Project
+       \resumeProjectHeading
+          {\href{https://github.com/srohatgi01/lead-a-thon}{\textbf{\large{\underline{Chess Bot Server}}}{ }\faGithub{} \href{https://github.com/srohatgi01/lead-a-thon}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{NodeJS, Express, Heroku}}}{Jan 2022}
+          \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{Chess Bot API server on NodeJS for LEAD-A-THON, a hackathon on HackerEarth}.}}
+            \resumeItem{\normalsize{Retrieved chess moves by web-scraping Encyclopaedia of Chess Openings.}}
+            \resumeItem{\normalsize{Created Backend server using the data retrieved and implemented caching as well.}}
+            % \resumeItem{
+            %     \textcolor{accent} 
+            %     {\href{https://play.google.com/store/apps/details?id=com.sarthak.cara} 
+            %     {\underline{\normalsize {Play Store Link }}}}
+            %     \textcolor{accent} 
+            %     {\href{https://carasalons.in} 
+            %     {\underline{\normalsize {Live Site}}}}
+            % }
+          \resumeItemListEnd 
+          \vspace{-13pt}
+    % Cara Project
+       \resumeProjectHeading
+          {\href{https://github.com/srohatgi01/cara_app}{\textbf{\large{\underline{Cara}}}{ }\faGithub{} \href{https://github.com/srohatgi01/cara_app}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{NodeJS, PostgreSQL, Flutter, Prisma, Heroku}}}{Dec 2021}
+          \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{Multichair time-slot based online hair appointment booking app}.}}
+            \resumeItem{\normalsize{Architected complex 3-tier relational database model, coded it in PSQL and used NodeJS to write a REST API which was consumed by web as well as mobile frameworks.}}
+            \resumeItem{\normalsize{Created Android App using Flutter framework to consume the api and to create fluid UI.}}
+            \resumeItem{
+                \textcolor{accent} 
+                {\href{https://play.google.com/store/apps/details?id=com.sarthak.cara} 
+                {\underline{\normalsize {Play Store Link }}}}
+                \textcolor{accent} 
+                {\href{https://carasalons.in} 
+                {\underline{\normalsize {Live Site}}}}
+            }
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+    % Karetaker Project
+    
+      \resumeProjectHeading
+          {\href{https://github.com/srohatgi01/karetaker-api}{\textbf{\large{\underline{Karetaker}}}{ }\faGithub{} \href{https://github.com/srohatgi01/karetaker-api}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{{NodeJS, MySQL, Flutter, Prisma, Vercel}}}{Sep 2021}
+          \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{Multi-purpose healthcare app for RGPV Hackathon 2021}.}}
+            \resumeItem{\normalsize{In a team of 2, built android \& web app that reminds for medication, store all medical records, generates unique QR code for each patient and let users share medical records with doctor by a single touch.}}
+            % \resumeItem{\normalsize{Created Android App using Flutter framework to consume the api and to create fluid UI.}}
+            % \resumeItem{
+            %     \textcolor{accent} 
+            %     {\href{https://play.google.com/store/apps/details?id=com.sarthak.cara} 
+            %     {\underline{\normalsize {Play Store Link }}}} 
+            %     \faGithub{}
+            %     \textcolor{accent} 
+            %     {\href{https://github.com/srohatgi01/cara_app} 
+            %     {\underline{\normalsize {GitHub Link}}}}
+            % }
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{C, C++, Dart, JavaScript, SQL, Python, Bash, XML}} \\
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{VS Code, Android Studio, DataGrip, Intellij Idea, Vim, Heroku}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ Linux, GitHub, NodeJS, ExpressJS, Git, Flutter, Prisma, Docker, Django Rest Framework}} \\
+     \textbf{\normalsize{Skills:}}{ \normalsize{Data Structures and Algorithms, Web \& App Development, OOP, RDBMS Modeling, Scrum}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+%-----------INVOLVEMENT---------------
+% \section{EXTRACURRICULAR}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Organization Name \href{Certificate Proof link}{\raisebox{-0.1\height}\faExternalLink } }{MM YYYY -- MM YYYY}{\underline{Role}}{Location}
+%             \resumeItemListStart
+%                 \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+%                 \resumeItem{\normalsize{Participation Certificate. \href{ParticipationCertificateLink.com}{\raisebox{-0.1\height}\faExternalLink }}}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+%  \vspace{-11pt}
+ 
+ %-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{Fundamentals of Database Engineering - Udemy}} \hspace{1.6cm}
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{Java}} \hspace{2.59cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com} {Docker Essentials - Udemy}}\\
+
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{Mastering DSA using C and C++ - Udemy}}{\hspace{2.59cm}}
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{SQL}} \hspace{2.6cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://coursera.org/share/a656928badb013f8349adde2fd04db2e}{Introduction to TCP/IP - Coursera \faExternalLink}} \\
+
+$\sbullet[.75] \hspace{0.2cm}${\href{https://www.hackerrank.com/s_rohatgi}{\textbf{4 Stars} in \textbf{SQL} \& {Testdome SQL public test, top 10\%
+}}}\hspace{.43cm}
+% $\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com}{MongoDB Basics}} \hspace{0.5cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{https://infyspringboard.onwingspan.com/en/cert/0b59373e-7378-406a-94b4-d8efcd53d044}{Scrum in Practice - Infosys \faExternalLink}} \\
+
+ \section{EXTRACURRICULAR}
+    \resumeItemListStart
+    \vspace{2pt}
+        \resumeItem{
+        {\normalsize{Gold Medalist in School, Zonal Rank 4 \& International Rank 117 in SOF National Cyber Olympiad (2018)}
+        }}
+         \resumeItem{
+        {\normalsize{Certificate of Merit in Robotics for Aakaar-2019 by IIT Bombay (2018)}
+        }}
+    \resumeItemListEnd
+\end{document}
