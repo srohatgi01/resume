@@ -1,2 +1,3 @@
 # Resume - Sarthak Rohatgi
-![Resume - Sarthak Rohatgi](https://user-images.githubusercontent.com/24872423/179912860-f9cc2ee6-e568-4a9e-bb91-a115f137bad3.png)
+
+![resume-sarthak-rohatgi (google id)](https://user-images.githubusercontent.com/24872423/179914542-1fa90221-09b4-47a0-bdca-3bc1291e1fa7.png)
